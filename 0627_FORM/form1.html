@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>form-1</title>
+</head>
+<body>
+    <h1>forn 입력, 선택 컨트롤하는 양식</h1>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>로그인양식</legend><!-- 숨김대상 -->
+            <!-- 컨트롤 요소 위치(block) -->
+            <ul>
+                <li><input type="text" name="user_name" placeholder="이름"></li>
+                <li><input type="text" name="uesr_id" placeholder="아이디" value="id"></li><!-- text한줄입력 -->
+                <li><input type="password" name="user_pw" placeholder="비밀번호"></li><!-- paccword입력보안 -->
+                <li>
+                    성별 : 
+                    <label for="male">남</label> 
+                    <input type="radio" name="gender" value="male" id="male">
+                    <label for="famale">여</label> 
+                    <input type="radio" name="gender" value="famale" id="famale">
+                    <!--for,id,value는 같은 값 작성 / 글자로도 선택가능 한 기능 / 속성 순서는 type 젤 먼저 쓰고 그 뒤로 상관없음-->
+                </li>
+                <li>
+                    정보 저장 동의 :
+                    <label>
+                        동의함
+                        <input type="radio" name="agerr_g" value="agerr">
+                    </label>
+                    <label>
+                        동의안함
+                        <input type="radio" name="agerr_g" value="disagree">
+                    </label>
+                </li>
+                <li>
+                    관심사(2개 이상 선택하세요)
+                    <label for="movie">영화</label>
+                    <input type="checkbox" name="hobby" value="movie" id="movie">
+                    <label for="sport">운동</label>
+                    <input type="checkbox" name="hobby" value="sport" id="sport">
+                    <label for="book">독서</label>
+                    <input type="checkbox" name="hobby" value="book" id="book">
+                </li>
+                <li>
+                    첨부파일<input type="file">
+                </li>
+            </ul>
+            <p>
+                <button type="submit">가입</button><!-- "submit" 전송 -->
+                <button type="reset">가입취소</button><!-- "reset" 입력한정보 없어짐 -->
+            </p>
+        </fieldset>
+    </form>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>로그인양식</legend>
+            <ul>
+                <li><input type="text" name="user_name" placeholder="이름"></li>
+                <li><input type="tsxt" name="user_id" placeholder="아이디"></li>
+                <li><input type="password" name="user_pw" placeholder="비밀번호"></li>
+                <li>
+                    성별 :
+                    <label for="male2">남</label>
+                    <input type="radio" name="gender" value="male2" id="male2">
+                    <label for="famale2">여</label>
+                    <input type="radio" name="gender" value="famale2" id="famale2">
+                </li>
+                <li>
+                    정보 저장 동의 :
+                    <label>동의
+                        <input type="radio" name="agerr_g" value="agree">
+                    </label>
+                    <label>동의안함
+                        <input type="radio" name="agerr_g" value="disagree">
+                    </label>
+                </li>
+                <li>
+                    관심사(2개 이상 선택하세요)
+                    <label for="movie2">영화</label>
+                    <input type="checkbox" name="hobby" value="movie2" id="movie2">
+                    <label for="sport2">운동</label>
+                    <input type="checkbox" name="hobby" value="sport2" id="sport2">
+                    <label for="book2">독서</label>
+                    <input type="checkbox" name="hobby2" value="book2" id="book2">
+                </li>
+                <li>
+                    첨부파일<input type="file">
+                </li>
+            </ul>
+            <p>
+                <button type="submit">가입</button>
+                <button type="reset">가입취소</button>
+            </p>
+        </fieldset>
+    </form>
+    <form action="#" method="post">
+        <fieldset>
+            <lagend>로그인양식</lagend>
+        </fieldset>
+    </form>
+</body>
+</html>
