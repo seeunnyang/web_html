@@ -43,12 +43,12 @@ header #h_btm_bg .h_btm .all_nav span {}
 #r3_bg .r3_area_wrap .popup_wrap {}
 #r3_bg .r3_area_wrap .popup_wrap .top {}
 #r3_bg .r3_area_wrap .popup_wrap .top h1 {}
-#r3_bg .r3_area_wrap .popup_wrap .top h1 .right {}
-#r3_bg .r3_area_wrap .popup_wrap .top h1 .right .bnr1 {}
-#r3_bg .r3_area_wrap .popup_wrap .top h1 .right .bnr2 {}
-#r3_bg .r3_area_wrap .popup_wrap .top h1 .right .bnr3 {}
-#r3_bg .r3_area_wrap .popup_wrap .top h1 .right .bnr4 {}
-#r3_bg .r3_area_wrap .popup_wrap .top h1 .right .pause {}
+#r3_bg .r3_area_wrap .popup_wrap .top .right {}
+#r3_bg .r3_area_wrap .popup_wrap .top .right .bnr1 {}
+#r3_bg .r3_area_wrap .popup_wrap .top .right .bnr2 {}
+#r3_bg .r3_area_wrap .popup_wrap .top .right .bnr3 {}
+#r3_bg .r3_area_wrap .popup_wrap .top .right .bnr4 {}
+#r3_bg .r3_area_wrap .popup_wrap .top .right .pause {}
 #r3_bg .r3_area_wrap .popup_wrap .btm {}
 #r3_bg .r3_area_wrap .popup_wrap .btm .popup1 {}
 #r3_bg .r3_area_wrap .popup_wrap .btm .popup1 img {}
@@ -81,8 +81,8 @@ header #h_btm_bg .h_btm .all_nav span {}
 #r4_bg .r4_area_wrap .bk_left {}
 #r4_bg .r4_area_wrap .bk_left .top {}
 #r4_bg .r4_area_wrap .bk_left .top h1 {}
-#r4_bg .r4_area_wrap .bk_left .top h1 .right {}
-#r4_bg .r4_area_wrap .bk_left .top h1 .right .more {}
+#r4_bg .r4_area_wrap .bk_left .top .right {}
+#r4_bg .r4_area_wrap .bk_left .top .right .more {}
 #r4_bg .r4_area_wrap .bk_left .book_contents {}
 #r4_bg .r4_area_wrap .bk_left .book_contents a {}
 #r4_bg .r4_area_wrap .bk_left .book_contents a .book_img {}
@@ -92,8 +92,8 @@ header #h_btm_bg .h_btm .all_nav span {}
 #r4_bg .r4_area_wrap .bk_right {}
 #r4_bg .r4_area_wrap .bk_right .top {}
 #r4_bg .r4_area_wrap .bk_right .top h1 {}
-#r4_bg .r4_area_wrap .bk_right .top h1 .right {}
-#r4_bg .r4_area_wrap .bk_right .top h1 .right .more {}
+#r4_bg .r4_area_wrap .bk_right .top .right {}
+#r4_bg .r4_area_wrap .bk_right .top .right .more {}
 #r4_bg .r4_area_wrap .bk_right .book_contents {}
 #r4_bg .r4_area_wrap .bk_right .book_contents .left {}
 #r4_bg .r4_area_wrap .bk_right .book_contents .left img {}
