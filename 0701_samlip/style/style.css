@@ -1,0 +1,51 @@
+/* header */
+header {background-color: gray;}
+header h1 {background-color: lightcoral;}
+header h1 a {}
+header h1 a img {background-color: lightgoldenrodyellow;}
+/* header-nav */
+header nav {background-color: lightgray;}
+header nav ul {background-color: lightpink;}
+header nav ul li {background-color: lightgreen;}
+header nav ul li a {}
+header .lnb {background-color: skyblue;}
+header .lnb li {background-color: antiquewhite;}
+header .lnb li a {background-color: plum;}
+/* main */
+main {background-color: beige;}
+main .breadcrumbs_bg {background-color: #f1f1f1;}
+main .breadcrumbs_bg .breadcrumbs {}
+main .breadcrumbs_bg .breadcrumbs a {background-color:pink;}
+main .breadcrumbs_bg .breadcrumbs em {background-color: lightblue;}
+/* main-contents1 경영이념 */
+main .contents1 {background-color: skyblue;}
+main .contents1 h1 {background-color: lightcoral;}
+main .contents1 p {background-color: lightsalmon;}
+/* main-contents2  */
+main .c2_bg {background-color: #f1f1f1;}
+main .c2_bg .contents2 {}
+main .c2_bg .contents2 p {}
+/* main-contents3 비전영역  */
+main .contents3 {background-color: aqua;}
+main .contents3 h2 {background-color: lightcoral;}
+main .contents3 h2+p {background-color: lightblue;}
+/* main-contents4  */
+main .c4_bg {background-color: #f1f1f1;}
+main .c4_bg .contents4 {}
+main .c4_bg .contents4 h2 {}
+main .c4_bg .contents4 ul {background-color: lightsalmon}
+main .c4_bg .contents4 ul li {}
+main .c4_bg .contents4 ul li h3 {}
+main .c4_bg .contents4 ul li p {}
+/* footer */
+footer {background-color: gray;}
+footer .f_top {background-color: lightblue;}
+footer .f_top .fnb {background-color: lightcoral;}
+footer .f_top .fnb li {}
+footer .f_top .fnb li a {}
+footer .f_top .site {background-color: aquamarine;}
+footer .f_top .site li {}
+footer .f_top .site li a {background-color: lightblue;}
+footer .f-btm {background-color: lightgoldenrodyellow;}
+footer .f-btm address {}
+footer .f-btm p {}
