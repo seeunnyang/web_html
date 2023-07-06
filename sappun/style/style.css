@@ -1,0 +1,61 @@
+/* header */
+header {background-color: gray}
+/* header .h_top */
+header .h_top {
+    background-color: #ccc;
+    width: 1440px; height: 36px; margin: auto; 
+}
+header .h_top a { font-weight: 500; letter-spacing: 0.02em;}
+/* header .h_btm */
+header .h_btm {}
+header .h_btm h1 {}
+header .h_btm h1 a {}
+header .h_btm h1 a img {width: 130px; height:19px;}
+header .h_btm .gnb {display: inline-block; text-align: right;}
+header .h_btm .gnb .gnb_left {float: left;}
+header .h_btm .gnb .gnb_left a {}
+header .h_btm .gnb .gnb_left a img {} 
+header .h_btm .gnb .gnb_left a span {border: 1px solid #ff7f50; border-radius: 20px;}
+header .h_btm .gnb .gnb_right {float: left;}
+header .h_btm .gnb .gnb_right a {}
+header .h_btm .gnb .gnb_right a img {}
+header nav {}
+header nav ul {}
+header nav ul li {}
+header nav ul li a {}
+/* main */
+main {}
+/* main .slide_wrap */
+main .slide_wrap {}
+main .slide_wrap .slide {}
+main .slide_wrap .slide a {}
+main .slide_wrap .slide a img {}
+/* main .bnr_wrap */
+main .bnr_wrap {}
+main .bnr_wrap .bnr {}
+main .bnr_wrap .bnr a {}
+main .bnr_wrap .bnr a img {}
+/* main .best_item */
+main .best_item {}
+main .best_item h1 {}
+main .best_item ul {}
+main .best_item li {}
+main .best_item li a {}
+main .best_item li a img {}
+main .best_item li h2 {}
+main .best_item li p {}
+main .best_item li p em {}
+/* main .made_bnr */
+main .made_bnr {}
+main .made_bnr h1 {}
+main .made_bnr h1 a {}
+/* aside */
+aside {}
+aside a {}
+aside a img {}
+/* footer */
+footer {}
+footer .f_top {}
+footer .f_top a {}
+footer address {}
+footer address p {}
