@@ -1,61 +1,153 @@
+/* aside poprp*/
+aside {
+    position: fixed; right: 30px; top: 500px; 
+    }
+aside a {
+    background-color: #fff; border: 1px solid #aaa; 
+    position: absolute; width: 30px; height: 30px; 
+}
+aside a:first-child {
+    background-color: #ff7f50; 
+    font-size: 1.44rem; text-align: center;
+    color: #fff; bottom: 120px;
+}
+aside a:nth-child(2) {bottom: 90px;}
+aside a:nth-child(3) {bottom: 60px;}
+aside a:nth-child(4) {bottom: 30px;}
+aside a:last-child {bottom: 0px;}
+aside a img {width: 100%;}
 /* header */
-header {background-color: gray}
+header {}
 /* header .h_top */
 header .h_top {
     background-color: #ccc;
-    width: 1440px; height: 36px; margin: auto; 
+    width: 100%; height: 36px; text-align: center; 
+    margin: 0 auto; padding-top: 7px;
 }
-header .h_top a { font-weight: 500; letter-spacing: 0.02em;}
+header .h_top a {font-weight:700; letter-spacing:-0.02em; }
 /* header .h_btm */
-header .h_btm {}
-header .h_btm h1 {}
+header .h_btm {
+    width: 1300px; height: 100px; margin: 0 auto;
+}
+header .h_btm h1 {
+    width: 130px; height: 19px; 
+    display: inline-block; margin: 40px 585px 0;
+}
 header .h_btm h1 a {}
-header .h_btm h1 a img {width: 130px; height:19px;}
-header .h_btm .gnb {display: inline-block; text-align: right;}
+header .h_btm h1 a img {width: 100%;}
+header .h_btm .gnb {
+    display: inline-block; float: right; 
+    position: relative;
+}
 header .h_btm .gnb .gnb_left {float: left;}
-header .h_btm .gnb .gnb_left a {}
+header .h_btm .gnb .gnb_left a {margin-right: 9px;}
 header .h_btm .gnb .gnb_left a img {} 
-header .h_btm .gnb .gnb_left a span {border: 1px solid #ff7f50; border-radius: 20px;}
+header .h_btm .gnb .gnb_left a span {
+    border: 1px solid #ff7f50; border-radius: 20px; 
+    position: absolute; top: 23px; right: 75px;
+    padding: 3px 7px;
+}
 header .h_btm .gnb .gnb_right {float: left;}
-header .h_btm .gnb .gnb_right a {}
+header .h_btm .gnb .gnb_right a {
+    margin-left: 9px; 
+    width: 16px; height: 16px;
+}
+header .h_btm .gnb .gnb_right a:first-child {
+    margin-left:0;
+}
 header .h_btm .gnb .gnb_right a img {}
-header nav {}
-header nav ul {}
-header nav ul li {}
-header nav ul li a {}
+header nav {
+    width: 1300px; height: 50px; margin: 0 auto;
+}
+header nav ul {text-align: center; padding-top: 15px;}
+header nav ul li {float: left; }
+header nav ul li a {margin-right: 47px;}
+header nav ul li:last-child a {margin-right: 0;}
 /* main */
 main {}
 /* main .slide_wrap */
 main .slide_wrap {}
 main .slide_wrap .slide {}
 main .slide_wrap .slide a {}
-main .slide_wrap .slide a img {}
+main .slide_wrap .slide a img {width: 100%;}
 /* main .bnr_wrap */
-main .bnr_wrap {}
+main .bnr_wrap {
+    width: 1300px; margin: 60px auto; overflow: hidden;
+}
 main .bnr_wrap .bnr {}
-main .bnr_wrap .bnr a {}
-main .bnr_wrap .bnr a img {}
+main .bnr_wrap .bnr a {
+    width: 416px; float: left; margin-right:26px;
+}
+main .bnr_wrap .bnr a:last-child {margin-right: 0;}
+main .bnr_wrap .bnr a img {width: 100%;}
 /* main .best_item */
-main .best_item {}
-main .best_item h1 {}
-main .best_item ul {}
-main .best_item li {}
-main .best_item li a {}
-main .best_item li a img {}
-main .best_item li h2 {}
-main .best_item li p {}
-main .best_item li p em {}
+main .best_item {
+    width: 1300px; margin: 60px auto 0; overflow: hidden;
+}
+main .best_item h1 {
+    font-size: 1.44rem; font-weight: 500; 
+    text-align: center;
+}
+main .best_item ul {margin: 60px 0 0;}
+main .best_item li {
+    width: 424px; height: 452px; float: left; 
+    margin-left: 14px;
+}
+main .best_item li:first-child, main .best_item li:nth-child(4) {margin-left: 0;}
+main .best_item li a {width: 424px; height: 303px;}
+main .best_item li a img {width: 100%;}
+main .best_item li h2 {
+    letter-spacing: -0.02em; margin-top: 7px;
+}
+main .best_item li p {
+    letter-spacing: -0.02em; margin-top: 7px;
+}
+main .best_item li p em {
+    font-size: 1.2rem; font-weight: 700;
+}
+main .best_item li p:nth-child(3) {
+    border-bottom: 1px solid #aaa; padding-bottom: 7px;
+}
+main .best_item li .production_review {
+    width: 424px; height: 23px;
+}
+main .best_item li .production_review .left {float: left;}
+main .best_item li .production_review .right {
+    float: right; color: #ff7f50;
+}
+main .best_item li .best_production {
+    width: 424px; height: 33px;
+}
+main .best_item li .best_production .first {
+    float: left; background-color: #ffe4c4; 
+    color: #fff; padding: 5px 7px;
+}
+main .best_item li .best_production .second {
+    float: left; background-color: #000080; 
+    color: #fff; padding: 5px 7px;
+}
 /* main .made_bnr */
-main .made_bnr {}
-main .made_bnr h1 {}
-main .made_bnr h1 a {}
-/* aside */
-aside {}
-aside a {}
-aside a img {}
+main .made_bnr {
+    background-image: url(../images/made_img.jpg); 
+    width: 100%; height: 284px; position: relative;
+}
+main .made_bnr h1 {
+    position: absolute; top: 86px; right: 602px; 
+    font-size: 2.074rem; font-weight: 700; color: #fff;
+}
+main .made_bnr a {
+    position: absolute; bottom: 99px; right: 663px; 
+    color: #fff; border: 1px solid #fff; 
+    padding: 5px 20px;
+}
 /* footer */
-footer {}
-footer .f_top {}
-footer .f_top a {}
-footer address {}
-footer address p {}
+footer {margin: 76px auto 0;}
+footer .f_top {
+    border-top: 1px solid #aaa; padding-top: 49px;
+}
+footer .f_top a {margin-right: 21px; color: #aaa;}
+footer .f_top a:nth-child(3) {color: #000;}
+footer address {margin-top: 36px;}
+footer address p {
+    letter-spacing: -0.02em; line-height: 40px;
+}
