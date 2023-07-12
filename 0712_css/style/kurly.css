@@ -1,0 +1,119 @@
+/* rbg(95 3 128) */
+/* 1050px */
+/* 42
+35
+63
+56 */
+/* all layout */
+.top_bur_bg .top_bnr,
+header {
+    margin: 0 auto; width: 1050px;
+}
+/* header-sprite 그룹선택자 */
+header .middle .logo h1,
+header .middle #searchFrm fieldset #search_btn,
+header .middle .lnb a,
+header .menu_btm .all_nav .menu {
+    background: url(../image/kurly_img/icon_set.png);
+    display:inline-block;
+    width: 36px; height: 36px;
+    text-indent: -9999px;
+}
+
+/* top_bur_bg */
+.top_bur_bg {background-color: rgb(95, 3, 128);}
+.top_bur_bg .top_bnr {
+    height: 42px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;/* 교차축 한줄일때 align-items적용 */
+    justify-content: center; /* 닫기 신경끄고 센터로 정렬 */
+    position: relative; /* 부모기준 (닫기를 position을 활용해 오른쪽 배치) */
+}
+.top_bur_bg .top_bnr .adver {color: #fff;}
+.top_bur_bg .top_bnr .adver em {font-weight: 700;}
+.top_bur_bg .top_bnr .close {
+    position: absolute; right: 0; /* 기준 본인 */
+}
+.top_bur_bg .top_bnr .close .fa-xmark {color: #fff;}
+/* header */
+header {}
+header .user_lnb {
+    height: 35px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+header .user_lnb a::after {
+    content:'';
+    width: 1px; height: 10px; 
+    background-color: #000;
+    display: inline-block;
+    margin: 0 10px;
+}
+header .user_lnb .join {color:rgb(95, 3, 128);}
+header .user_lnb .login {}
+header .user_lnb .customer_service {}
+header .user_lnb .customer_service::after {display: none;}
+header .middle {
+    height: 63px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+header .middle .logo {
+    display: flex; flex-flow: row nowrap; align-items: center;
+}
+header .middle .logo h1 {background-position:0 -158px; width:82px; height:42px; margin-right: 10px;}
+header .middle .logo .market {color: rgb(95, 3, 128); font-weight: 700;}
+header .middle .logo .market::after {
+    content:'';
+    width: 1px; height: 10px; 
+    background-color: #000;
+    display: inline-block;
+    margin: 0 10px;
+}
+header .middle .logo .beauty {}
+header .middle #searchFrm {
+    border: 1px solid rgb(95, 3, 128);
+    border-radius: 5px; width: 400px;
+    padding: 5px 10px 0;
+}
+header .middle #searchFrm fieldset {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+header .middle #searchFrm fieldset #search_txt {}
+header .middle #searchFrm fieldset #search_btn {background-position:0 -50px;}
+header .middle .lnb {
+    width: 150px;
+    display: flex; flex-flow: row nowrap; justify-content: space-between;
+}
+header .middle .lnb .map {background-position:0 -14px;}
+header .middle .lnb .like {background-position:0 -122px;}
+header .middle .lnb .cart {background-position:0 -86px;}
+header .menu_btm {
+    height: 56px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+header .menu_btm .all_nav {}
+header .menu_btm .all_nav .menu {width: 16px; height: 14px; background-position: 0 0; margin-right: 10px;}
+header .menu_btm .all_nav span {}
+header .menu_btm nav {
+    width: 400px;
+    display: flex; flex-flow: row nowrap; justify-content: space-between;
+}
+header .menu_btm nav a {}
+header .menu_btm .delivery_info {border: 1px solid #aaa; border-radius: 50px; padding: 10px 10px ;}
+header .menu_btm .delivery_info em {color: rgb(95, 3, 128);}
+/* header .menu_btm .delivery_info em .fa-circle {
+    font-size:1px;
+} */
+header .menu_btm .delivery_info span {}
