@@ -1,0 +1,248 @@
+/* 1. title */
+.title_bg {
+    background:url(../images/bg1.png)
+    no-repeat fixed center 60%;
+    background-size:cover;
+    position: relative;
+}
+.title_bg::after {
+    content:'';
+    display: block; width: 100%; height: 800px;
+    background: linear-gradient(180deg, rgba(255,255,255,0.7) 0%, rgba(0,0,0,0.7) 100%);
+    position:absolute; left:0; top:0; z-index:90;
+    /* absolute 적용 시 기본 block w100% inline처럼 변한다. */
+}
+.title_bg #snow {
+    position: absolute; /* 겹치기 */
+    left:0; top:0; /* 시작위치 */
+    z-index: 200; /* 상대적값 */
+    width: 100%; height: 800px; /* 크기 */
+}
+.title_bg .title {
+    width: 1200px; height: 800px; margin: 0 auto;
+    display: flex; flex-flow: column nowrap; align-items:center;
+    z-index:100; position:relative; color: #fff;
+}
+.title_bg .title .logo {
+    align-self: flex-start;
+}
+.title_bg .title .logo img {}
+.title_bg .title h1 {
+    font-size: 3.157rem;  line-height: 90px;
+    margin: 100px 0 44px 0; text-align: center;
+}
+.title_bg .title h1 em {font-size: 3.157rem; font-weight:700;}
+.title_bg .title .sponsor_btn {
+    background: linear-gradient(90deg, rgba(255,147,0,1) 0%, rgba(255,114,0,1) 100%);
+    border-radius: 50px; padding: 30px 70px;
+    display: flex; align-items: center;
+}
+.title_bg .title .sponsor_btn span {
+    color: #fff; margin-right: 10px;
+    font-size: 1.777rem; font-weight: 500; letter-spacing: -0.04em;
+}
+.title_bg .title .sponsor_btn img {}
+.title_bg .title .sponsor_qa {
+    align-self: flex-end;
+    background: #222; border-radius: 30px; 
+    padding: 15px 20px;
+    display: flex; flex-flow: row nowrap;
+}
+.title_bg .title .sponsor_qa > * {margin-right: 10px;}
+.title_bg .title .sponsor_qa span {
+    color: #fff; font-size: 1.333rem; font-weight: 500; letter-spacing: -0.04em;
+}
+.title_bg .title .sponsor_qa img {width: 20px; height: 20px;}
+.title_bg .title .sponsor_qa img:last-child {margin-right: 0;}
+/* 2. quiz */
+.quiz_gb {
+    background: url(../images/quiz_bg.png) no-repeat fixed center;
+    background-size: cover;
+}
+.quiz_gb .quiz {
+    width:1200px; margin:0 auto;
+    display: flex; flex-flow: row nowrap; 
+    align-items: center;
+    justify-content: space-between;/* 좌우 양쪽끝으로 정렬 */
+    padding:100px 0;
+}
+.quiz_gb .quiz > * {}
+.quiz_gb .quiz .left {
+    display: flex; flex-flow: column nowrap; width: 488px; align-items: center; color: #fff;
+}
+.quiz_gb .quiz .left h2 {
+    font-size:3.157rem; font-weight:700; 
+    letter-spacing:-0.04em;
+    
+}
+.quiz_gb .quiz .left h3 {
+    font-size:1.333rem; font-weight:500; 
+    letter-spacing:-0.04em;
+    margin: 35px 0;
+}
+.quiz_gb .quiz .left #quiz_frm {}
+.quiz_gb .quiz .left #quiz_frm fieldset {}
+.quiz_gb .quiz .left #quiz_frm fieldset ul {}
+.quiz_gb .quiz .left #quiz_frm fieldset ul li {margin-bottom: 25px;}
+.quiz_gb .quiz .left #quiz_frm fieldset ul li:last-child {margin-bottom: 35px;}
+.quiz_gb .quiz .left #quiz_frm fieldset ul li label {display: flex; flex-flow: row nowrap;}
+.quiz_gb .quiz .left #quiz_frm fieldset ul li label input {
+    appearance: none; /* form input 요소 숨기기 */
+}
+.quiz_gb .quiz .left #quiz_frm fieldset ul li label span {
+    background: url(../images/quiz_un_check.png) no-repeat;
+    padding-left:34px;/* 이미지 넣기 위한 자리 만들기 */
+    font-size:1.333rem; font-weight:500; 
+    letter-spacing:-0.04em; color: #fff;
+}
+/* 상태선택자 (ragio check될 경우 span의 이미지 변경하기) */
+.quiz_gb .quiz .left #quiz_frm fieldset ul li label input:checked+span {
+    background: url(../images/quiz_check.png) no-repeat;
+}
+.quiz_gb .quiz .left #quiz_frm fieldset #answer_btn {
+    background: #222;
+    border-radius: 40px; 
+    padding: 20px 170px;
+    font-size:1.333rem; font-weight:500; 
+    letter-spacing:-0.04em; color: #fff;
+}
+.quiz_gb .quiz .right {
+    width: 550px; height: 308px;
+    display: flex; flex-flow: column nowrap; align-items: center; 
+}
+.quiz_gb .quiz .right h2 {
+    display: flex; flex-flow: row nowrap; 
+    align-items: center; justify-content: center;
+    background: #ff7200; width:550px; height:70px; 
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.quiz_gb .quiz .right h2 img {margin-right: 10px;}
+.quiz_gb .quiz .right h2 span {
+    font-size:1.777rem; font-weight: 700; 
+    letter-spacing: -0.04em; color: #fff;
+}
+.quiz_gb .quiz .right .contents {
+    background: #fff; width: 550px;
+    display: flex; flex-flow: row nowrap; align-items: flex-end; justify-content: center;
+    padding:50px 0;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.quiz_gb .quiz .right .contents em {font-size: 6.250rem; color: #ff7200; font-weight: 700; letter-spacing: -0.04em;}
+.quiz_gb .quiz .right .contents span {font-size: 3.157rem; font-weight: 700; letter-spacing: -0.04em;}
+.quiz_gb .quiz .right .contents span:nth-child(2) {
+    color: #ff7200; margin-right: 10px;}
+.quiz_gb .quiz .right .update {
+    color: #fff; font-weight: 500; 
+    letter-spacing: -0.04em;
+    margin-top: 30px;
+}
+/* 3. youtube */
+.video_bg {
+    background: url(../images/video_bg.png) no-repeat fixed center;
+    background-size: cover;
+    display: flex; flex-flow: column nowrap;
+    align-items: center; padding: 100px 0;
+}
+.video_bg h2 {
+    font-size: 3.157rem; font-weight: 700;
+    line-height: 90px; text-align: center;
+    margin-bottom: 50px;}
+.video_bg iframe {
+    width: 800px; height: 500px;
+    margin-bottom: 50px;
+}
+.video_bg .sponsor_btn {
+    background: linear-gradient(90deg, rgba(255,147,0,1) 0%, rgba(255,114,0,1) 100%);
+    border-radius: 50px; padding: 30px 70px;
+    display: flex; align-items: center;
+}
+.video_bg .sponsor_btn span {
+    color: #fff; margin-right: 10px;
+    font-size: 1.777rem; font-weight: 500; letter-spacing: -0.04em;
+}
+.video_bg .sponsor_btn img {}
+/* 4. 50%감소 */
+.bg50 {
+    background: url(../images/50_bg.png) no-repeat fixed center;
+    background-size: cover;
+}
+.bg50 .wrap50 {
+    display: flex; flex-flow: column nowrap;
+    width: 1200px; margin: 0 auto; padding: 100px 0;
+    color: #fff;
+}
+.bg50 .wrap50 h2 {
+    font-size: 3.157rem; font-weight: 700; 
+    letter-spacing: -0.04em; line-height: 90px; 
+    margin-bottom: 50px;
+}
+.bg50 .wrap50 h2 span {
+    font-size: 3.157rem; font-weight: 700; 
+    color:#000; background:#fff;
+}
+.bg50 .wrap50 .contents {
+    font-size: 1.777rem; font-weight: 500; letter-spacing: -0.04em;
+    line-height:60px;
+    margin-bottom: 50px;
+}
+.bg50 .wrap50 p {}
+.bg50 .wrap50 p img {}
+/* 5. 28조/27cm/332만명 */
+.warming_bg {background: #f1f1f1;}
+.warming_bg .warming {
+    width: 1200px; margin: 0 auto; padding: 100px 0;
+    display: flex; flex-flow: column nowrap; align-items: center;
+}
+.warming_bg .warming h2 {
+    font-size: 3.157rem; font-weight: 700; 
+    letter-spacing: -0.04em; line-height: 90px; 
+    margin-bottom: 50px;
+}
+.warming_bg .warming .contents {
+    font-size: 1.777rem; font-weight: 500; letter-spacing: -0.04em;
+    line-height:60px; text-align: center;
+    margin-bottom: 50px;
+}
+.warming_bg .warming ul {display: flex; flex-flow: row nowrap;}
+.warming_bg .warming ul li {
+    width:calc(33.33% - 40px / 3);
+    margin-right:20px;
+}
+.warming_bg .warming ul li:last-child {margin-right: 0;}
+.warming_bg .warming ul li .top {
+    /* background: url(../images/332.png) no-repeat fixed center;
+    background-size: cover; */
+    height: 300px; color: #fff;
+    background-position:center 50%; /* 기본적으로 이미지의 왼쪽 위부터 적용되기 때문에 이미지 포지션 원하는 값적용하기 z,y순서, %로 작성해도됨  */
+    background-size: cover;
+    display: flex; flex-flow: column nowrap; align-items: center;
+}
+.warming_bg .warming ul li:nth-child(1) .top {
+    background-image: url(../images/28.png);
+}
+.warming_bg .warming ul li:nth-child(2) .top {
+    background-image: url(../images/27.png);
+}
+.warming_bg .warming ul li:nth-child(3) .top {
+    background-image: url(../images/28.png);
+}
+.warming_bg .warming ul li .top h3 {
+    font-size: 3.157rem; font-weight: 700; 
+    letter-spacing: -0.04em; margin-top: 50px;
+}
+.warming_bg .warming ul li .top p {
+    font-size: 1.777rem; font-weight: 500; 
+    letter-spacing: -0.04em; margin-top: 50px;
+}
+.warming_bg .warming ul li .list_contents {
+    text-align: center; font-weight: 500; 
+    letter-spacing: -0.04px; line-height: 32px; 
+    padding: 30px 18px; background-color: #fff;
+}
+/* 6. 지구위기 */
+/* 7. WWF */
+/* 8. 후원선물 */
+/* 9. 후원하기 */
+/* 10. 결제안내사항 */
