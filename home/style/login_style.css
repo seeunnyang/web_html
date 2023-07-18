@@ -43,22 +43,75 @@ header nav {
 header nav ul {text-align: center; padding-top: 15px;}
 header nav ul li {float: left; }
 header nav ul li a {margin-right: 47px;}
+header nav ul li a:hover {color: pink;}
 header nav ul li:last-child a {margin-right: 0;}
-/* login */
-.login {background-color: lightblue; width: 480px; height: 470px; margin:100px auto;}
-.login h1 {text-align: center;}
-.login form {background-color: lightcoral;}
-.login form fieldset {background-color: lightgoldenrodyellow; text-align: center; overflow: hidden;}
-.login form fieldset .id_pw {background-color: lightsalmon; margin: 10px 120px; padding: 10px 0; border: 1px solid #aaa; border-radius: 10px;}
-.login form fieldset .id_pw li {}
-.login form fieldset .id_pw li i {margin-right: 10px;}
-.login form fieldset .id_pw li #uesr_id {}
-.login form fieldset .id_pw li #uesr_pw {}
-.login form fieldset .keep_ip {float:left; margin-left: 120px;}
-.login form fieldset .keep_ip li {}
-.login form fieldset .keep_ip li #keep {}
-.login form fieldset .keep_ip li .keep_text {}
-.login form fieldset p {}
-.login form fieldset p button {}
-.login .btn {}
-.login .btn a {}
+/* main */
+main {
+    width: 480px; 
+    margin:100px auto;
+    padding: 50px;
+    display: flex; flex-flow:column nowrap; align-items: center;
+}
+main > * {margin-top: 20px;}
+main h1 {margin-top: 0;}
+main .login {
+    font-size: 1.5rem; font-weight: 700;
+}
+main form {}
+main form fieldset {
+    display: flex; flex-flow: column nowrap; align-items: center;
+    border: 1px solid #aaa; border-radius: 10px;
+}
+main form fieldset .id_pw {
+    display: flex; flex-flow: column nowrap; 
+    align-items: center; width: 350px;
+}
+main form fieldset .id_pw li {
+    margin-top: 20px;
+    width: 350px; padding: 10px;
+    display: flex; flex-flow: row nowrap; align-items: center; justify-content: space-between; 
+    border: 1px solid #aaa;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+main form fieldset .id_pw li:last-child {
+    border: 1px solid #aaa;
+    border-top: none;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+main form fieldset .id_pw li i {margin-right: 10px;}
+main form fieldset .id_pw li #user_id {width: 300px; height: 30px;}
+main form fieldset .id_pw li #user_pw {width: 300px; height: 30px;}
+main form fieldset .keep_ip {align-self: flex-end; }
+main form fieldset .keep_ip li {}
+main form fieldset .keep_ip li #keep {}
+main form fieldset .keep_ip li .keep_text {}
+main form fieldset button {
+    width: 400px; height: 50px; border-radius: 30px; border: none; background-color: pink; margin: 20px;
+    font-size: 1.2rem; font-weight: 700; color: #fff;
+}
+main .btn {
+    display: flex; flex-flow: row nowrap; 
+    justify-content: center; margin-tops: 10px;
+}
+main .btn a {
+    margin-right: 30px; border: 1px solid #aaa; border-radius: 30px;
+    padding: 5px 10px;
+}
+main .btn a:last-child {margin-right: 0;}
+/* footer */
+footer {margin: 76px auto 0;}
+footer .f_top {
+    border-top: 1px solid #aaa; padding-top: 49px;
+}
+footer .f_top a {margin-right: 21px; color: #aaa;}
+footer .f_top a:nth-child(3) {color: #000;}
+footer address {margin-top: 36px;}
+footer address p {
+    letter-spacing: -0.02em; line-height: 40px;
+}

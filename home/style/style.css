@@ -45,6 +45,7 @@ header nav {
 header nav ul {text-align: center; padding-top: 15px;}
 header nav ul li {float: left; }
 header nav ul li a {margin-right: 47px;}
+header nav ul li a:hover {color: pink;}
 header nav ul li:last-child a {margin-right: 0;}
 /* main */
 main {}
